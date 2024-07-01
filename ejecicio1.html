@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <script>
+        let numeroDeElementos = 4;
+
+        function generarSerieFibonacci(n) {
+            let serie = [];
+            let a = 0, b = 1, siguiente;
+
+            for (let i = 0; i < n; i++) {
+                serie.push(a);
+                siguiente = a + b;
+                a = b;
+                b = siguiente;
+            }
+            return serie;
+        }
+
+        let serieFibonacci = generarSerieFibonacci(numeroDeElementos);
+
+        console.log(serieFibonacci);
+    </script>
+</body>
+
+</html>
